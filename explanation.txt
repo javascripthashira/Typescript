@@ -25,7 +25,7 @@ zod is schema first validator
 //transformin sanitising durin validation cleanin the input before use
 //{ "email": "  JOHN@EXAMPLE.COM  ", "name": "  john  " }
 
-//console.log , morgan, winstonstyle logging
+//console.log , morgan, winston-style logging
 //morgan just logs request , but winston logs thins like the user that made the request,
 the error ,
 //what happened , who was invovled and when it happened
