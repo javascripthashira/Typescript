@@ -1,0 +1,14 @@
+{"level":"info","message":"server started","timestamp":"2026-06-24T07:22:28.112Z"}
+{"level":"info","message":"server started","timestamp":"2026-06-24T07:26:37.792Z"}
+{"level":"http","message":"::1 - - [24/Jun/2026:07:26:42 +0000] \"GET /todos HTTP/1.1\" 200 167 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-06-24T07:26:42.881Z"}
+{"level":"info","message":"server started","timestamp":"2026-06-24T07:30:34.061Z"}
+{"level":"info","message":"server started","timestamp":"2026-06-24T07:41:09.997Z"}
+{"level":"info","message":"error: no todo found for this id","timestamp":"2026-06-24T07:41:32.769Z"}
+{"level":"http","message":"::1 - - [24/Jun/2026:07:41:32 +0000] \"GET /todos/10 HTTP/1.1\" 200 44 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-06-24T07:41:32.779Z"}
+{"level":"info","message":"server started","timestamp":"2026-06-24T07:42:38.645Z"}
+{"level":"error","message":"error: no todo found for this id","timestamp":"2026-06-24T07:42:43.195Z"}
+{"level":"http","message":"::1 - - [24/Jun/2026:07:42:43 +0000] \"GET /todos/10 HTTP/1.1\" 200 44 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-06-24T07:42:43.201Z"}
+{"level":"info","message":"server started","timestamp":"2026-06-24T07:43:35.247Z"}
+{"level":"error","message":"error: no todo found for this id","timestamp":"2026-06-24T07:43:40.689Z"}
+{"level":"http","message":"::1 - - [24/Jun/2026:07:43:40 +0000] \"GET /todos/10 HTTP/1.1\" 500 44 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-06-24T07:43:40.693Z"}
+{"level":"info","message":"server started","timestamp":"2026-06-24T08:21:21.575Z"}

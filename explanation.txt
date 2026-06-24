@@ -1,0 +1,63 @@
+npm init -y
+npm install express
+npm install -D typescript ts-node-dev @types/node @types/express
+npx tsc --init
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true
+  }
+}
+
+add this to script    "dev": "ts-node-dev src/index.ts"
+
+why zod? 
+express validator only works for simple cases ,checkin if a field exists  if an email is valid ,
+req.body is still typed as any 
+zod is schema first validator
+//npm install zod
+//with zod ypu
+
+//transformin sanitising durin validation cleanin the input before use
+//{ "email": "  JOHN@EXAMPLE.COM  ", "name": "  john  " }
+
+//console.log , morgan, winstonstyle logging
+//morgan just logs request , but winston logs thins like the user that made the request,
+the error ,
+//what happened , who was invovled and when it happened
+//
+
+steps:
+npm install winston
+create a confiG folder(its for confiurations like your database and security)
+
+error   → the app is broken. Something failed.
+warn    → nothing broke yet, but something looks wrong
+info    → normal stuff happened. User logged in. Server started.
+http    → an HTTP request came in and got a response
+debug   → deep detail. Only useful when you're investigating something
+
+"We have a logger now. Someone hits your /todos endpoint. What information
+ would actually be useful to log?"
+
+ method        →  GET, POST, PUT, DELETE
+path          →  /api/v1/todos
+statusCode    →  200, 404, 500
+duration      →  how long the request took in ms
+userId        →  who made the request
+correlationId →  unique ID for this specific request
+
+❌ passwords          →  even if hashed
+❌ JWT tokens         →  anyone with this token can act as that user
+❌ API keys / secrets →  gives access to external services
+❌ credit card numbers →  instant legal and financial liability
+❌ full name + address + phone together  →  PII combination
+
+"Imagine a user has orders. How would you design the URL to get all orders belonging to a specific user?"
+GET  /users/:id/orders         →  orders belong to a user       ✅
+GET  /users/:id/orders/:oid    →  one specific order of a user  ✅
+
